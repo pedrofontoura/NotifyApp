@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser currentUser) {
+        if (currentUser == null) {
 
+        }
     }
 }
