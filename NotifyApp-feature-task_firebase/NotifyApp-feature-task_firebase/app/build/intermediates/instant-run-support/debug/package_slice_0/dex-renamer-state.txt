@@ -1,0 +1,4 @@
+#Wed Dec 06 14:38:18 BRST 2017
+base.0=C\:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+path.0=classes.dex
+renamed.0=classes.dex
