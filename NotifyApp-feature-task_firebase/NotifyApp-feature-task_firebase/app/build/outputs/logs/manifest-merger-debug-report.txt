@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\75442681c69f11685f3a8ab3a30d8884\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.android.gms:play-services-auth:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.6.2.aar\c39d6bdd6cc1cf3ef1eefa33fdd2a455\AndroidManifest.xml:16:1-26:12
 MERGED from [com.google.firebase:firebase-core:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.2.aar\d45d1ec2f6e81860bc120067d8c9e01f\AndroidManifest.xml:2:1-6:12
@@ -38,25 +38,25 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] C:\Users\mat
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\eddfc69c2c6be77cf8e7325c6e49a25a\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.2.aar\528830572b0b417ff4956dd749cde3f2\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.2.aar\75cdbed33ab995dcacc2e1dcdd84141a\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:5:5-21:19
 MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\75442681c69f11685f3a8ab3a30d8884\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.firebase:firebase-auth:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.2.aar\75442681c69f11685f3a8ab3a30d8884\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.android.gms:play-services-auth:11.6.2] C:\Users\mathe\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.6.2.aar\c39d6bdd6cc1cf3ef1eefa33fdd2a455\AndroidManifest.xml:19:5-25:19
@@ -147,10 +147,14 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:16:27-74
-activity#com.example.notifyapp.UserScreen
-ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:19:9-57
+activity#com.example.notifyapp.UserActivity
+ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:19:9-50
 	android:name
-		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:19:19-45
+		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:19:19-47
+activity#com.example.notifyapp.GroupActivity
+ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:20:9-60
+	android:name
+		ADDED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml:20:19-48
 uses-sdk
 INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\mathe\AndroidStudioProjects\NotifyApp-feature-task_firebase\NotifyApp-feature-task_firebase\app\src\main\AndroidManifest.xml

@@ -7,7 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.notifyapp.Model.Grupo;
+import com.example.notifyapp.Model.Usuario;
 import com.example.notifyapp.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by mathe on 06/12/2017.
@@ -17,19 +21,19 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
 
 
 
-     //   private ArrayList<Trooper> troopers;
+        private ArrayList<Grupo> grupos;
 
         private View.OnLongClickListener onLongClickListener;
 
 
 
-   /* public GroupAdapter(ArrayList<Trooper> troopers, View.OnLongClickListener onLongClickListener) {
+   public GroupAdapter(ArrayList<Grupo> grupos, View.OnLongClickListener onLongClickListener) {
 
-            this.troopers = troopers;
+            this.grupos = grupos;
 
             this.onLongClickListener = onLongClickListener;
 
-        }*/
+        }
 
 
 
@@ -59,9 +63,9 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
 
         public void onBindViewHolder(ViewHolder holder, int position) {
 
-          //  Trooper trooper = troopers.get(position);
+            Grupo grupo = grupos.get(position);
 
-         //   holder.tvGroup.setText(trooper.getName());
+            holder.tvGroup.setText(grupos.size());
 
             holder
 
@@ -87,7 +91,7 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
 
         public int getItemCount() {
 
-            return 0/*troopers.size()*/;
+            return grupos.size();
 
         }
 
@@ -100,10 +104,6 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
             TextView tvGroup;
 
             ImageView imvGroup;
-
-            View separator;
-
-
 
             public ViewHolder(View itemView) {
 

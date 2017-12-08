@@ -156,10 +156,6 @@
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9228a8111ce8869927068c38e2e167d4\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_teste.xml.flat",
-        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\layout\\teste.xml"
-    },
-    {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9228a8111ce8869927068c38e2e167d4\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
@@ -218,6 +214,10 @@
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_qr2x.png.flat",
         "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\mipmap-xhdpi\\ic_qr2x.png"
+    },
+    {
+        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_imagem.png.flat",
+        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\mipmap-hdpi\\imagem.png"
     },
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -646,6 +646,10 @@
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9228a8111ce8869927068c38e2e167d4\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_item_group.xml.flat",
+        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\layout\\view_item_group.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1212,6 +1216,10 @@
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\3fd24fb5b11cb6ba5b17ee547998c354\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },
     {
+        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_group.xml.flat",
+        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\layout\\activity_group.xml"
+    },
+    {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9228a8111ce8869927068c38e2e167d4\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
@@ -1222,10 +1230,6 @@
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\3fd24fb5b11cb6ba5b17ee547998c354\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
-    },
-    {
-        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_screen.xml.flat",
-        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\layout\\activity_user_screen.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1298,6 +1302,10 @@
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9228a8111ce8869927068c38e2e167d4\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\layout\\activity_user.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
@@ -1822,6 +1830,10 @@
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\mathe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9228a8111ce8869927068c38e2e167d4\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_item_lista_usuarios.xml.flat",
+        "source": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\src\\main\\res\\layout\\view_item_lista_usuarios.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\AndroidStudioProjects\\NotifyApp-feature-task_firebase\\NotifyApp-feature-task_firebase\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_close_item_material.xml.flat",

@@ -35,7 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.notifyapp.UserScreen" />
+        <activity android:name="com.example.notifyapp.UserActivity" />
+        <activity android:name="com.example.notifyapp.GroupActivity" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
