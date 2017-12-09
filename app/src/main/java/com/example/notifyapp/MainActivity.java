@@ -1,12 +1,13 @@
 package com.example.notifyapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
     private FirebaseAuth mAuth;
-    private Button btn_login;
+    private TextView btn_login;
     private EditText text_user;
     private EditText text_pass;
 
@@ -28,19 +29,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mAuth = FirebaseAuth.getInstance();
-
+//        mAuth = FirebaseAuth.getInstance();
         this.setupUI();
-
-
     }
 
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
+        //FirebaseUser currentUser = mAuth.getCurrentUser();
+        //updateUI(currentUser);
     }
 
     private void updateUI(FirebaseUser currentUser) {
@@ -50,10 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setupUI() {
-        text_user = findViewById(R.id.login_view_usuario);
-        text_pass = findViewById(R.id.login_view_senha);
+        text_user = findViewById(R.id.login_view_usuario_2);
+        text_pass = findViewById(R.id.login_view_senha_2);
 
-        btn_login = findViewById(R.id.login_view_button_logar);
+        btn_login = findViewById(R.id.login_view_button_logar_2);
         btn_login.setOnClickListener(this);
 
 
@@ -84,9 +82,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.login_view_button_logar) {
-            createUser(text_user.getText().toString(), text_pass.getText().toString());
-        }
+
+        Intent intent = new Intent(this, UserActivity.class);
+        startActivity(intent);
+
+
+//        int i = v.getId();
+//        if (i == R.id.login_view_button_logar) {
+//            createUser(text_user.getText().toString(), text_pass.getText().toString());
+//        }
     }
 }
