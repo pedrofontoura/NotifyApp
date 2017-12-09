@@ -11,12 +11,12 @@
     <LinearLayout
         android:background="@color/colorTopLoginView"
         android:backgroundTint="@color/colorTopLoginView"
-        android:layout_height="200dp"
+        android:layout_height="186dp"
         android:gravity="center"
         android:layout_width="match_parent">
 
         <ImageView
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
             android:background="@mipmap/ico_home"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content" />
@@ -25,35 +25,102 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
 
         <EditText
-            android:id="@+id/login_view_usuario"
-            android:layout_marginTop="30dp"
-            android:hint="Usuário"
-            android:textAlignment="center"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="146dp"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/login_view_senha"
-            android:layout_marginTop="10dp"
-            android:hint="Senha"
-            android:textAlignment="center"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="146dp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/login_view_button_logar"
+            android:id="@+id/login_view_usuario_2"
+            android:hint="Usuario"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@mipmap/background_button"
+            android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginEnd="65dp"/>
+
+        <EditText
+            android:id="@+id/login_view_senha_2"
+            android:hint="Senha"
+            android:layout_marginTop="20dp"
+            android:layout_width="240dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginEnd="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_background">
+
+             <TextView
+                 android:id="@+id/login_view_button_logar_2"
+                 android:layout_width="274dp"
+                 android:layout_height="64dp"
+
+                 android:text="Logar"
+                 android:textAlignment="center"
+                 android:gravity="center"
+                 android:elevation="5dp"
+                 />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ou"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+                android:layout_width="274dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_qr"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan QR Code"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"/>
+
+         </LinearLayout>
 
     </LinearLayout>
 
