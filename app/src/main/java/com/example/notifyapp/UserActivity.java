@@ -8,15 +8,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.example.notifyapp.Adapter.GroupAdapter;
-import com.example.notifyapp.Model.Grupo;
+import com.example.notifyapp.Model.GrupoModel;
 import com.example.notifyapp.Repository.GroupRepository;
 
 import java.util.ArrayList;
 
-public class UserActivity extends AppCompatActivity  implements View.OnLongClickListener {
+public class UserActivity extends AppCompatActivity  implements GroupAdapter.OnItemClickListener ,View.OnLongClickListener {
 
     private RecyclerView rvGrupos;
-    private ArrayList<Grupo> grupos;
+    private ArrayList<GrupoModel> grupoModels;
     private GroupAdapter grupoAdapter;
 
 
@@ -31,10 +31,11 @@ public class UserActivity extends AppCompatActivity  implements View.OnLongClick
 
     private void populateRecyclerView(){
 
-        grupos = GroupRepository.getAll();
+        grupoModels = GroupRepository.getAll();
         rvGrupos.setLayoutManager(new LinearLayoutManager(this));
-        grupoAdapter =  new GroupAdapter(grupos, this);
+        grupoAdapter =  new GroupAdapter(grupoModels, this, this);
         rvGrupos.setAdapter(grupoAdapter);
+
 
     }
 
@@ -44,9 +45,13 @@ public class UserActivity extends AppCompatActivity  implements View.OnLongClick
     @Override
     public boolean onLongClick(View view) {
 
+        return true;
+    }
+
+    @Override
+    public void onItemClick(GrupoModel grupoModel) {
         Intent intent = new Intent(this, GroupActivity.class);
-        intent.putExtra("nomeGrupo", grupos);
+        intent.putExtra("nomeGrupo", grupoModel);
         startActivity(intent);
-        return false;
     }
 }

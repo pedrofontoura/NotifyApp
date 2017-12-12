@@ -17,26 +17,36 @@ import java.util.ArrayList;
  * Created by mathe on 08/12/2017.
  */
 
-public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> implements View.OnClickListener{
 
 
 
     private ArrayList<Usuario> usuarios;
-
+    private OnItemClickListener onItemClickListener;
     private View.OnLongClickListener onLongClickListener;
 
 
 
-    public UserAdapter(ArrayList<Usuario> usuarios,
-                       AdapterView.OnItemClickListener onItemClickListener, View.OnLongClickListener onLongClickListener) {
+    public UserAdapter(ArrayList<Usuario> users,
+                       OnItemClickListener onItemClickListener, View.OnLongClickListener onLongClickListener) {
 
-        this.usuarios = usuarios;
-
+        this.usuarios = users;
+        this.onItemClickListener = onItemClickListener;
         this.onLongClickListener = onLongClickListener;
 
     }
 
+    @Override
+    public void onClick(View v) {
 
+        onItemClickListener.onItemClick((Usuario) v.getTag());
+    }
+
+
+
+    public interface OnItemClickListener {
+        public void onItemClick(Usuario usuario);
+    }
 
     @Override
 
@@ -46,7 +56,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
                 LayoutInflater.from(parent.getContext())
 
-                        .inflate(R.layout.view_item_group,
+                        .inflate(R.layout.view_item_lista_usuarios,
 
                                 parent,
 
@@ -68,19 +78,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
         holder.tvUser.setText(usuario.getName());
 
-        holder
-
-                .imvUser
-
-                .setImageResource(R.drawable.common_google_signin_btn_icon_disabled/*ResourceUtil
-
-                            .getResourceBasedOnAffiliation(
-
-                                    trooper.getAffiliation()*/
-
-
-
-                );
+        holder.itemView.setOnClickListener(this);
 
         holder.itemView.setOnLongClickListener(onLongClickListener);
 

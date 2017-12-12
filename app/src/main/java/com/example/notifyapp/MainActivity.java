@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
 
 
+
 //        int i = v.getId();
 //        if (i == R.id.login_view_button_logar) {
 //            createUser(text_user.getText().toString(), text_pass.getText().toString());

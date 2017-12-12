@@ -1,6 +1,5 @@
 package com.example.notifyapp.Repository;
 
-import com.example.notifyapp.Model.Grupo;
 import com.example.notifyapp.Model.Usuario;
 
 import java.util.ArrayList;
