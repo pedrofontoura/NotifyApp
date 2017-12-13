@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         this.setupUI();
     }
 
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        //FirebaseUser currentUser = mAuth.getCurrentUser();
-        //updateUI(currentUser);
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
     }
 
     private void updateUI(FirebaseUser currentUser) {
@@ -82,14 +82,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+//        Intent intent = new Intent(this, UserActivity.class);
+//        startActivity(intent);
 
-        Intent intent = new Intent(this, UserActivity.class);
-        startActivity(intent);
-
-
-//        int i = v.getId();
-//        if (i == R.id.login_view_button_logar) {
-//            createUser(text_user.getText().toString(), text_pass.getText().toString());
-//        }
+        int i = v.getId();
+        if (i == R.id.login_view_button_logar_2) {
+            String usuario = text_user.getText().toString();
+            String senha = text_pass.getText().toString();
+            createUser(usuario, senha);
+        }
     }
 }
