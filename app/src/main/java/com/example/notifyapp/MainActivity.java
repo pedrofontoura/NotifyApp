@@ -44,7 +44,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);
+        createDatabase();
+    }
 
+    private void updateUI(FirebaseUser currentUser) {
+        if (currentUser == null) {
+
+        }
+    }
+
+    private void createDatabase() {
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Grupos");
@@ -53,12 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         array.add("grupo2");
         array.add("grupo3");
         myRef.setValue(array);
-    }
-
-    private void updateUI(FirebaseUser currentUser) {
-        if (currentUser == null) {
-
-        }
     }
 
     private void setupUI() {
