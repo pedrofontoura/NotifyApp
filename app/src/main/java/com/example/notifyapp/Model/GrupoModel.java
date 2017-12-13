@@ -1,18 +1,20 @@
 package com.example.notifyapp.Model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by mathe on 08/12/2017.
  */
 
-public class Grupo implements Serializable{
+public class GrupoModel implements Serializable{
 
 
 
     private int Id;
     private String nomeDoGrupo;
-    private Usuario[] usuarios;
+    private ArrayList<Usuario> usuarios;
+
 
     public String getNomeDoGrupo() {
         return nomeDoGrupo;
@@ -30,26 +32,24 @@ public class Grupo implements Serializable{
         Id = id;
     }
 
-    public Usuario[] getUsuarios() {
+    public ArrayList<Usuario> getUsuarios() {
         return usuarios;
     }
 
-    public void setUsuarios(Usuario[] usuarios) {
+    public void setUsuarios(ArrayList<Usuario> usuarios) {
         this.usuarios = usuarios;
     }
 
-    public Grupo(int id, Usuario[] usuarios) {
-        Id = id;
-        this.usuarios = usuarios;
-    }
 
-    public Grupo(int id, String nomeDoGrupo) {
+
+    public GrupoModel(int id, String nomeDoGrupo) {
         Id = id;
         this.nomeDoGrupo = nomeDoGrupo;
     }
 
 
-    public Grupo(int id, String nomeDoGrupo, Usuario[] usuarios) {
+
+    public GrupoModel(int id, String nomeDoGrupo, ArrayList<Usuario> usuarios) {
         Id = id;
         this.nomeDoGrupo = nomeDoGrupo;
         this.usuarios = usuarios;

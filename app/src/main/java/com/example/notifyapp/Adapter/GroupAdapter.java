@@ -7,8 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.notifyapp.Model.Grupo;
-import com.example.notifyapp.Model.Usuario;
+import com.example.notifyapp.Model.GrupoModel;
 import com.example.notifyapp.R;
 
 import java.util.ArrayList;
@@ -21,16 +20,17 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
 
 
 
-        private ArrayList<Grupo> grupos;
+        private ArrayList<GrupoModel> grupoModels;
         private OnItemClickListener onItemClickListener;
         private View.OnLongClickListener onLongClickListener;
 
 
 
-   public GroupAdapter(ArrayList<Grupo> grupos, View.OnLongClickListener onLongClickListener) {
+   public GroupAdapter(ArrayList<GrupoModel> grupoModels, OnItemClickListener onItemClickListener ,
+                       View.OnLongClickListener onLongClickListener) {
 
-            this.grupos = grupos;
-//            this.onItemClickListener = onItemClickListener;
+            this.grupoModels = grupoModels;
+            this.onItemClickListener = onItemClickListener;
             this.onLongClickListener = onLongClickListener;
 
         }
@@ -63,23 +63,13 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
 
         public void onBindViewHolder(ViewHolder holder, int position) {
 
-            Grupo grupo = grupos.get(position);
+            GrupoModel grupoModel = grupoModels.get(position);
 
-            holder.tvGroup.setText(grupo.getNomeDoGrupo());
+            holder.tvGroup.setText(grupoModel.getNomeDoGrupo());
 
-//            holder
-//
-//                    .imvGroup
-//
-//                    .setImageResource(R.drawable.common_google_signin_btn_icon_disabled/*ResourceUtil
-//
-//                            .getResourceBasedOnAffiliation(
-//
-//                                    trooper.getAffiliation()*/
-//
-//
-//
-//                    );
+            holder.itemView.setTag(grupoModel);
+
+            holder.itemView.setOnClickListener(this);
 
             holder.itemView.setOnLongClickListener(onLongClickListener);
 
@@ -89,22 +79,16 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
 
         @Override
 
-        public int getItemCount() {
-
-            return grupos.size();
-
-        }
+        public int getItemCount() { return grupoModels.size(); }
 
         @Override
         public void onClick(View v) {
 
-            onItemClickListener.onItemClick((Grupo) v.getTag());
+            onItemClickListener.onItemClick((GrupoModel) v.getTag());
     }
 
 
-    public interface OnItemClickListener {
-        public void onItemClick(Grupo grupo);
-    }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -127,5 +111,9 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
             }
 
         }
+
+    public interface OnItemClickListener {
+        public void onItemClick(GrupoModel grupoModel);
+    }
 
 }

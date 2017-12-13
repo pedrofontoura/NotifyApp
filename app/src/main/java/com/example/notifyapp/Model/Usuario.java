@@ -1,10 +1,12 @@
 package com.example.notifyapp.Model;
 
+import java.io.Serializable;
+
 /**
  * Created by mathe on 08/12/2017.
  */
 
-public class Usuario {
+public class Usuario implements Serializable{
 
 
     private int Id;

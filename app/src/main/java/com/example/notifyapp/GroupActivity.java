@@ -8,21 +8,21 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.notifyapp.Adapter.GroupAdapter;
 import com.example.notifyapp.Adapter.UserAdapter;
-import com.example.notifyapp.Model.Grupo;
+import com.example.notifyapp.Model.GrupoModel;
 import com.example.notifyapp.Model.Usuario;
-import com.example.notifyapp.Repository.GroupRepository;
+import com.example.notifyapp.Repository.UserRepository;
 
 import java.util.ArrayList;
 
-public class GroupActivity extends AppCompatActivity implements View.OnLongClickListener{
+public class GroupActivity extends AppCompatActivity implements UserAdapter.OnItemClickListener,View.OnLongClickListener{
 
-    public Grupo grupo;
+    public Usuario usuario;
     private RecyclerView rvUsuarios;
-    private ArrayList<Usuario> grupos;
-    private UserAdapter grupoAdapter;
+    private ArrayList<Usuario> usuarios;
+    private UserAdapter usuariosAdapter;
     private TextView nomeGrupoTv;
+    private GrupoModel grupoModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,37 +30,39 @@ public class GroupActivity extends AppCompatActivity implements View.OnLongClick
         setContentView(R.layout.activity_group);
 
         nomeGrupoTv = findViewById(R.id.nome_do_grupo_tv);
-    rvUsuarios = findViewById(R.id.grupo_rv);
+        rvUsuarios = findViewById(R.id.lista_usuarios_rv);
 
-        populateRecyclerView();
+       bindGrupo();
+      populateRecyclerView();
     }
 
     private void populateRecyclerView(){
 
-//        grupos = GroupRepository.getAll();
-//        rvGrupos.setLayoutManager(new LinearLayoutManager(this));
-//        grupoAdapter =  new GroupAdapter(grupos, this);
-//        rvGrupos.setAdapter(grupoAdapter);
+        usuarios = UserRepository.getAll();
+        rvUsuarios.setLayoutManager(new LinearLayoutManager(this));
+        usuariosAdapter =  new UserAdapter(usuarios, this, this);
+        rvUsuarios.setAdapter(usuariosAdapter);
 
     }
 
-//    private void bindGrupo() {
-//        Intent intent = getIntent();
-//        grupo = (Grupo) intent.getSerializableExtra("nomeGrupo");
-////        setTitle(grupo.getNomeDoGrupo());
-//        nomeGrupoTv.setText(grupo.getNomeDoGrupo());
-//    }
-        @Override
+    private void bindGrupo() {
+        Intent intent = getIntent();
+        grupoModel = (GrupoModel) intent.getSerializableExtra("nomeGrupo");
+        nomeGrupoTv.setText(grupoModel.getNomeDoGrupo());
+    }
+    @Override
     public boolean onLongClick(View view) {
+
+
+
+
         return false;
+    }
+
+    @Override
+    public void onItemClick(Usuario usuario) {
+
     }
 }
 
 
-//    private void populateRecyclerView() {
-//        troopers = TrooperRepository.tryGettingFromSharedPreferences(getSharedPreferences(Constants.PREFS_NAME, MODE_PRIVATE));
-//
-//        rvTroopers.setLayoutManager(new LinearLayoutManager(this));
-//        trooperAdapter = new TrooperAdapter(troopers, this, this);
-//        rvTroopers.setAdapter(trooperAdapter);
-//    }

@@ -1,9 +1,7 @@
 package com.example.notifyapp.Repository;
 
-import com.example.notifyapp.Model.Grupo;
-import com.example.notifyapp.Model.Usuario;
+import com.example.notifyapp.Model.GrupoModel;
 
-import java.security.acl.Group;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -15,21 +13,19 @@ public class GroupRepository {
 
 
 
+    private static final ArrayList<GrupoModel> GRUPO_MODELS = new ArrayList<GrupoModel>(Arrays.asList(
 
-    private static final ArrayList<Grupo> GRUPOS = new ArrayList<Grupo>(Arrays.asList(
-
-            new Grupo(1, "grupo1" ),
-            new Grupo(2, "CWI")
+            new GrupoModel(1, "grupo1" ),
+            new GrupoModel(2, "CWI"),
+            new GrupoModel(3, "Teste")
 
     ));
 
 
-    public static ArrayList<Grupo> getAll() {
+    public static ArrayList<GrupoModel> getAll() {
 
-        return GRUPOS;
+        return GRUPO_MODELS;
 
     }
-
-
 
 }
