@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         this.setupUI();
     }
 
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        //FirebaseUser currentUser = mAuth.getCurrentUser();
-        //updateUI(currentUser);
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
     }
 
     private void updateUI(FirebaseUser currentUser) {
@@ -53,6 +53,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_login = findViewById(R.id.login_view_button_logar_2);
         btn_login.setOnClickListener(this);
+
+
+    }
+
+    private void signIn(String email, String password){
+
+        mAuth.signInWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+
+                    Log.d(TAG, "siginWithEmail:Sucess");
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    updateUI(user);
+                } else {
+
+                    Log.w(TAG, "siginWithEmail:Failed", task.getException());
+                    Toast.makeText(MainActivity.this, "Authentication", Toast.LENGTH_SHORT).show();
+                    updateUI(null);
+                }
+
+
+            }
+        });
 
 
     }
@@ -86,11 +111,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, UserActivity.class);
         startActivity(intent);
 
-
-
-//        int i = v.getId();
-//        if (i == R.id.login_view_button_logar) {
-//            createUser(text_user.getText().toString(), text_pass.getText().toString());
-//        }
+        int i = v.getId();
+        if (i == R.id.login_view_button_logar_2) {
+            //createUser(text_user.getText().toString(), text_pass.getText().toString());
+            signIn(text_user.getText().toString(), text_pass.getText().toString());
+        }
     }
 }
