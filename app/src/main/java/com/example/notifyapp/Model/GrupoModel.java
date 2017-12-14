@@ -47,6 +47,9 @@ public class GrupoModel implements Serializable{
         this.nomeDoGrupo = nomeDoGrupo;
     }
 
+    public GrupoModel(String nomeDoGrupo) {
+       this.nomeDoGrupo = nomeDoGrupo;
+    }
 
 
     public GrupoModel(int id, String nomeDoGrupo, ArrayList<Usuario> usuarios) {

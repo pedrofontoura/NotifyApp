@@ -9,13 +9,14 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.notifyapp.Adapter.GroupAdapter;
+import com.example.notifyapp.Model.Grupo;
 import com.example.notifyapp.Model.GrupoModel;
 import com.example.notifyapp.Repository.GroupRepository;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -25,7 +26,7 @@ public class UserActivity extends AppCompatActivity  implements GroupAdapter.OnI
     private ArrayList<GrupoModel> grupoModels;
     private GroupAdapter grupoAdapter;
     private static final String TAG = "UserActivity";
-
+    private ChildEventListener mChildEventListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,27 +39,47 @@ public class UserActivity extends AppCompatActivity  implements GroupAdapter.OnI
 
     private void populateRecyclerView(){
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Grupos");
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference().child("Grupos");
 
-        myRef.addValueEventListener(new ValueEventListener() {
+
+        mChildEventListener = new ChildEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                ArrayList<GrupoModel> value = (ArrayList) dataSnapshot.getValue();
-                Log.d(TAG, "value is " + value);
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+              dataSnapshot.getValue();
+
+              Log.d(TAG, "value is " + dataSnapshot);
+
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Log.w(TAG, "Failed to read Value", databaseError.toException());
+
             }
-        });
+        };
+
+        myRef.addChildEventListener(mChildEventListener);
+
 
         grupoModels = GroupRepository.getAll();
         rvGrupos.setLayoutManager(new LinearLayoutManager(this));
         grupoAdapter =  new GroupAdapter(grupoModels, this, this);
         rvGrupos.setAdapter(grupoAdapter);
-
 
     }
 

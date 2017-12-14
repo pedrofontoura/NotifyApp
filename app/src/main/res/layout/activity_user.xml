@@ -48,5 +48,11 @@
 
     </android.support.v7.widget.RecyclerView>
 
-
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:layout_anchor="@id/grupo_rv"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@mipmap/ico_home"/>
 </LinearLayout>

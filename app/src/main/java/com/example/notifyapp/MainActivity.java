@@ -111,10 +111,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, UserActivity.class);
         startActivity(intent);
 
-        int i = v.getId();
-        if (i == R.id.login_view_button_logar_2) {
-            //createUser(text_user.getText().toString(), text_pass.getText().toString());
-            signIn(text_user.getText().toString(), text_pass.getText().toString());
-        }
+//        int i = v.getId();
+//        if (i == R.id.login_view_button_logar_2) {
+//            //createUser(text_user.getText().toString(), text_pass.getText().toString());
+//            signIn(text_user.getText().toString(), text_pass.getText().toString());
+//        }
     }
 }
